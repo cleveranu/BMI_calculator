@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <link rel="stylesheet" type="text/css" href="bmi.css" media="screen" />
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="bmi.js"></script>
+
+    </head>
+    <body>
+        <title>BMI Calculator</title>
+        <div class="main">
+            <div class="title">Calculate Your Body Mass Index</div>
+            <div class="content">
+                💠 Body mass index (BMI) is a measure of body fat based on height
+                and weight that applies to adult men and women. View the BMI
+                tables or use the tool below to compute yours.<br>
+                <br><strong>💠Steps:<br></strong>  &nbsp;&nbsp;&nbsp;&nbsp;your weight and height using
+                standard or metric measures.<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;Select "Compute BMI" and your BMI will appear below.<br><br>
+                <b>💠BMI Categories:</b><br>
+                &nbsp;&nbsp;&nbsp;Underweight = 18.5<br>
+                &nbsp;&nbsp;&nbsp;Normal weight = 18.5–24.9<br>
+                &nbsp;&nbsp;&nbsp;Overweight = 25–29.9<br>
+                &nbsp;&nbsp;&nbsp;Obesity = BMI of 30 or greater
+            </div>
+            <div class="calcy">
+                <button class="head">CALCULATOR</button>
+                <div class="inputs">
+                    <div class="gen">
+                    <label for="gender">Gender :&nbsp;&nbsp;</label>
+                  <input type="radio" name="male" id="x1" onclick="bmiCalcy()">Male &nbsp;&nbsp;&nbsp;&nbsp;</=>
+                  <input type="radio" name="fmale" id="x2" onclick="bmiCalcy()">Female</input> 
+                      
+                </div>
+                <!-- <div class="secondhead">
+                    <p class="headsw"><b>System of measurement:</b>
+                    <button class="metric" id="y1">Metric</button>
+                    <button class="imperial" id="y2">Imperial</button></p>
+                </div> -->
+                <div class="inputs">
+                    <label for="Your height" >height in cm: </label>
+                    <div class="i1">
+                    <input type="text" placeholder="Enter your height:" name="uname"  id="n1"> </div></div>
+                    <div class="inputs2">
+                    <label for="Your weight" >weight in kg:</label>
+                    <div class="i2">
+                    <input type="text" placeholder="Enter your weight:" name="uname" id="n2" ></div></div>
+                    <div class="final">
+                        <button class="f" onclick="bmiCalcy()">calculate</button>
+                    </div>
+               
+            </div>
+        </div>
+    </body>
+</html>
